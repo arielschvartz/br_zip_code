@@ -1,6 +1,6 @@
-= BrZipCode
+# BrZipCode
 
-== What is this?
+## What is this?
 
 This gem helps you to find an address based on a brazilian zip code. For that, 3 webservices are used:
 
