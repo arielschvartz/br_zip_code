@@ -1,3 +1,5 @@
+require 'httparty'
+
 module BrZipCode
   def self.strip zip_code
     zip = zip_code.sub(/\./, '').sub(/\-/, '')
