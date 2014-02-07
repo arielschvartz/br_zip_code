@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    br_zip_code (0.0.2)
-      httparty
+    br_zip_code (0.0.6)
+      httparty (~> 0.12.0)
       rails (>= 3.2.14)
 
 GEM
