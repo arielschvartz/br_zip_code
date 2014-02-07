@@ -8,4 +8,15 @@ This gem helps you to find an address based on a brazilian zip code. For that, 3
 * [Correio Control](http://cep.correiocontrol.com.br "Correio Control")
 * [Via Virtual](http://viavirtual.com.br "Via Virtual")
 
+The webservices are searched in order. If one is not available, the next is tested until one is available or none.
+
+## How to use?
+
+        BrZipCode.get_address("22441090")   ==> {:street_type=>"Rua", :street=>"Rua General Venâncio Flores", :state=>"RJ", :city=>"Rio de Janeiro", :neighborhood=>"Leblon"}
+        BrZipCode.get_address("22.441-090") ==> {:street_type=>"Rua", :street=>"Rua General Venâncio Flores", :state=>"RJ", :city=>"Rio de Janeiro", :neighborhood=>"Leblon"}
+        BrZipCode.get_address("22441-090")  ==> {:street_type=>"Rua", :street=>"Rua General Venâncio Flores", :state=>"RJ", :city=>"Rio de Janeiro", :neighborhood=>"Leblon"}
+        BrZipCode.get_address("12345678")   ==> {:error=>"CEP não encontrado"}
+        BrZipCode.get_address("1234567")    ==> {:error=>"CEP inválido"}
+
+
 This project rocks and uses MIT-LICENSE.
