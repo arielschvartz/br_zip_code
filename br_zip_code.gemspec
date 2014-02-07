@@ -13,11 +13,11 @@ Gem::Specification.new do |s|
   s.summary     = "Need to do tests."
   s.description = "Gem that lets user find a brazilian address with the given zip_code."
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "Gemfile"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 3.2.14"
-  s.add_dependency "httparty"
+  s.add_runtime_dependency "httparty"
 
   s.add_development_dependency "sqlite3"
 
