@@ -11,7 +11,7 @@ This gem helps you to find an address based on a brazilian zip code. For that, 3
 The webservices are searched in order. If one is not available, the next is tested until one is available or none.
 
 ## Installation
-  gem 'br_zip_code'
+    gem 'br_zip_code'
 
 ## How to use?
 
