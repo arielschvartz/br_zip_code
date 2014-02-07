@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    br_zip_code (0.0.1)
-      rails (~> 4.0.2)
+    br_zip_code (0.0.2)
+      httparty
+      rails (>= 3.2.14)
 
 GEM
   remote: https://rubygems.org/
@@ -36,13 +37,18 @@ GEM
     builder (3.1.4)
     erubis (2.7.0)
     hike (1.2.3)
+    httparty (0.12.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.6.9)
+    json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
+    multi_xml (0.5.5)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -85,4 +91,5 @@ PLATFORMS
 
 DEPENDENCIES
   br_zip_code!
+  httparty
   sqlite3
