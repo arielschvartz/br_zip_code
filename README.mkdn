@@ -10,13 +10,30 @@ This gem helps you to find an address based on a brazilian zip code. For that, 3
 
 The webservices are searched in order. If one is not available, the next is tested until one is available or none.
 
+## Installation
+  gem 'br_zip_code'
+
 ## How to use?
+
+### Getting the address
 
         BrZipCode.get_address("22441090")   ==> {:street_type=>"Rua", :street=>"Rua General Venâncio Flores", :state=>"RJ", :city=>"Rio de Janeiro", :neighborhood=>"Leblon"}
         BrZipCode.get_address("22.441-090") ==> {:street_type=>"Rua", :street=>"Rua General Venâncio Flores", :state=>"RJ", :city=>"Rio de Janeiro", :neighborhood=>"Leblon"}
         BrZipCode.get_address("22441-090")  ==> {:street_type=>"Rua", :street=>"Rua General Venâncio Flores", :state=>"RJ", :city=>"Rio de Janeiro", :neighborhood=>"Leblon"}
+
         BrZipCode.get_address("12345678")   ==> {:error=>"CEP não encontrado"}
         BrZipCode.get_address("1234567")    ==> {:error=>"CEP inválido"}
 
+### Formatting the number
+
+        BrZipCode.strip("22.441-090")     ==> "22441090"
+        BrZipCode.strip("22441-090")      ==> "22441090"
+        BrZipCode.strip("22.441090")      ==> "22441090"
+
+        BrZipCode.strip("22.441---090")   ==> nil
+        BrZipCode.strip("2222")           ==> nil
+
+        BrZipCode.formatted("22441090")   ==> "22.441-090"
+        BrZipCode.formatted("22.441-090") ==> "22.441-090"
 
 This project rocks and uses MIT-LICENSE.
