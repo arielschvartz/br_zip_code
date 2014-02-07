@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Ariel Schvartz"]
   s.email       = ["ari.shh@gmail.com"]
   s.homepage    = "https://github.com/arielschvartz"
-  s.summary     = "TODO: Summary of BrZipCode."
+  s.summary     = "Need to do tests."
   s.description = "Gem that lets user find a brazilian address with the given zip_code."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
