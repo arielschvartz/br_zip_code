@@ -8,7 +8,6 @@ require "httparty"
 Gem::Specification.new do |s|
   s.name        = "br_zip_code"
   s.version     = BrZipCode::VERSION
-  s.platform    = Gem::Platfrom::RUBY
   s.authors     = ["Ariel Schvartz"]
   s.email       = ["ari.shh@gmail.com"]
   s.homepage    = "https://github.com/arielschvartz"
