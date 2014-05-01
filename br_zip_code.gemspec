@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
   s.description = "Gem that lets user find a brazilian address with the given zip_code."
 
   s.files = `git ls-files`.split("n")
-  s.executables = `git ls-files`.split("n").map{|f| f =~ /^bin/(.*)/ ? $1 : nil}.compact
   s.require_path = 'lib'
 
   s.test_files = Dir["test/**/*"]
