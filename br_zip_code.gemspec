@@ -14,9 +14,7 @@ Gem::Specification.new do |s|
   s.summary     = "BR Zip Code - #{s.version}"
   s.description = "Gem that lets user find a brazilian address with the given zip_code."
 
-  s.files = `git ls-files`.split("n")
-  s.require_path = 'lib'
-
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_runtime_dependency "httparty", "~> 0.12.0"
