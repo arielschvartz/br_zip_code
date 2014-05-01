@@ -1,3 +1,5 @@
+require 'br_zip_code/engine'
+require 'br_zip_code/version'
 require 'httparty'
 
 module BrZipCode

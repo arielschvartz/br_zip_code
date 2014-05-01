@@ -1,5 +1,7 @@
+require_dependency "new_relic_ping/application_controller"
+
 module BrZipCode
-  class ZipCodeController < ::ApplicationController
+  class ZipCodeController < ApplicationController
     def show
       zip_code = params[:zip_code] || params[:id]
 
