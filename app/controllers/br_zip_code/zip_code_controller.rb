@@ -1,5 +1,5 @@
 module BrZipCode
-  class ZipCodeController < ApplicationController
+  class ZipCodeController < ::ApplicationController
     def show
       zip_code = params[:zip_code] || params[:id]
 

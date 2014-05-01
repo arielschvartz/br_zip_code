@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  match 'cep' => 'zip_code#show'
+  get 'zip_code' => 'zip_code#show', as: :zip_code
 end
