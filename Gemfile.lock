@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    br_zip_code (0.2.1)
+    br_zip_code (0.2.2)
       httparty
 
 GEM
