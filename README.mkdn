@@ -41,10 +41,6 @@ The webservices are searched in order. If one is not available, the next is test
 
 # Zip Code Check
 
-## Installation
-    # Add this to config/routes.rb
-    mount BrZipCode::Engine => ''
-
 ## Usage
     Now the route /zip_code/xxxxxxxx.json is accessible.
     Pass the zip_code and get the response, so you can create AJAX function to autocomplete addresses.
