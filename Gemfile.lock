@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     br_zip_code (0.2.0)
-      httparty (~> 0.12.0)
+      httparty
 
 GEM
   remote: https://rubygems.org/
@@ -12,10 +12,13 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.1)
     multi_xml (0.5.5)
+    rake (10.3.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   br_zip_code!
+  bundler (~> 1.5)
   httparty
+  rake
