@@ -1,22 +1,24 @@
-$:.push File.expand_path("../lib", __FILE__)
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'br_zip_code/version'
 
-# Maintain your gem's version:
-require "br_zip_code/version"
-require "httparty"
+Gem::Specification.new do |spec|
+  spec.name        = "br_zip_code"
+  spec.version     = BrZipCode::VERSION
+  spec.authors       = ["Ariel Schvartz"]
+  spec.email         = ["ari.shh@gmail.com"]
+  spec.summary     = "BR Zip Code - #{spec.version}"
+  spec.description = "Gem that lets user find a brazilian address with the given zip_code."
+  spec.homepage    = "https://github.com/arielschvartz/br_zip_code"
+  spec.license       = "MIT"
 
-# Describe your gem and declare its dependencies:
-Gem::Specification.new do |s|
-  s.name        = "br_zip_code"
-  s.version     = BrZipCode::VERSION
-  s.authors     = ["Ariel Schvartz"]
-  s.email       = ["ari.shh@gmail.com"]
-  s.homepage    = "https://github.com/arielschvartz"
-  s.summary     = "BR Zip Code - #{s.version}"
-  s.description = "Gem that lets user find a brazilian address with the given zip_code."
+  spec.files         = `git ls-files -z`.split("\x0")
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ["lib"]
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
-
-  s.add_runtime_dependency "httparty", "~> 0.12.0"
-
+  spec.add_development_dependency "bundler", "~> 1.5"
+  spec.add_development_dependency "rake"
+  spec.add_dependency 'httparty'
 end
