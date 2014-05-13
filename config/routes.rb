@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'zip_code/:id' => 'zip_code#show'
+  get 'zip_code/:id' => 'br_zip_code/zip_code#show'
 end
