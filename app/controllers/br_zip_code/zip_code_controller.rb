@@ -1,6 +1,5 @@
 module BrZipCode
-  class ZipCodeController < ApplicationController
-
+  class ZipCodeController < ApplicationController::Base
     def show
       begin
         response = BrZipCode.get(params[:zip_code] || params[:id])
