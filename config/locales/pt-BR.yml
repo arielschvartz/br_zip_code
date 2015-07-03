@@ -1,0 +1,4 @@
+pt-BR:
+  br_zip_code:
+    not_found: 'CEP não encontrado'
+    timeout: 'Não foi possível conectar aos servidores'
