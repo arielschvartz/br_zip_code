@@ -44,6 +44,20 @@ module BrZipCode
     self.configuration.attempts = value
   end
 
+  def self.strip zip_code
+    zip_code.to_s.gsub(/[^0-9]/, '')
+  end
+
+  def self.formatted zip_code
+    numbers = self.strip zip_code
+
+    if numbers.length == 8
+      numbers.insert(2, '.').insert(6, '-')
+    else
+      nil
+    end
+  end
+
   def self.services
     return @services unless @services.nil?
 

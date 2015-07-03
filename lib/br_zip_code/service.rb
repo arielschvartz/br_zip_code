@@ -3,7 +3,7 @@ module BrZipCode
     attr_accessor :zip_code, :response, :response_body
 
     def initialize zip_code, no_timeout = false
-      @zip_code = zip_code.to_s.gsub(/[^0-9]/, '')
+      @zip_code = BrZipCode.strip(zip_code)
 
       return unless self.basic_valid?
 

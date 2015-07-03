@@ -45,7 +45,7 @@ So, http://localhost:3000/zip_code/22441090.json will return:
 ```json
 {
   "success":true,
-  "zip_info":
+  "zip_code_info":
   {
     "street_type":"Rua",
     "street":"Rua General Venâncio Flores",

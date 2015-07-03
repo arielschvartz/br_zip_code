@@ -3,3 +3,4 @@ require 'br_zip_code'
 
 # SHARED EXAMPLES
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+
