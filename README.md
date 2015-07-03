@@ -1,12 +1,12 @@
 # BrZipCode
 
-This gem helps you to find an address based on a brazilian zip code. For that, 3 webservices are used:
+This gem helps you to find an address based on a brazilian zip code. For that, 5 webservices are used:
 
 * [Postmon](http://postmon.com.br/ "Postmon")
 * [Via CEP](http://viacep.com.br/ "Via CEP")
-* [Correio Control](http://cep.correiocontrol.com.br "Correio Control")
 * [República Virtual](http://republicavirtual.com.br/cep/ "República Virtual")
-* [CEP Livre](http://ceplivre.com.br/ "CEP Livre")
+* [CEP Livre](http://ceplivre.com.br/ "CEP Livre") - This one needs an API KEY set as an environment variable.
+* [Correio Control](http://cep.correiocontrol.com.br "Correio Control")
 
 The webservices are searched in order. If one is not available, the next is tested until one is available or none.
 
