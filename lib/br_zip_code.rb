@@ -29,7 +29,7 @@ module BrZipCode
   end
 
   def self.timeout
-    self.configuration.timeout || 5
+    self.configuration.timeout || 3
   end
 
   def self.attempts
