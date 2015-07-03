@@ -63,13 +63,17 @@ module BrZipCode
 
     @services = []
 
-    [
+    class_names = [
       'Postmon',
       'Viacep',
       'CorreioControl',
       'RepublicaVirtual',
       'CepLivre'
-    ].each do |class_name|
+    ]
+
+    class_names.delete('CepLivre') if ENV['CEP_LIVRE_TOKEN'].nil?
+
+    class_names.each do |class_name|
       @services.push Module.const_get("BrZipCode::Service::#{class_name}")
     end
 
