@@ -1,3 +1,5 @@
+require 'rails'
+
 module BrZipCode
   class ZipCodeController < ApplicationController::Base
     def show
