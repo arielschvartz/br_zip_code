@@ -29,7 +29,7 @@ module BrZipCode
   end
 
   def self.timeout
-    self.configuration.timeout || 3
+    self.configuration.timeout || 5
   end
 
   def self.attempts
@@ -66,9 +66,9 @@ module BrZipCode
     class_names = [
       'Postmon',
       'Viacep',
-      'CorreioControl',
       'RepublicaVirtual',
-      'CepLivre'
+      'CepLivre',
+      'CorreioControl'
     ]
 
     class_names.delete('CepLivre') if ENV['CEP_LIVRE_TOKEN'].nil?

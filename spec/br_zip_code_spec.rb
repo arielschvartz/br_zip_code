@@ -25,9 +25,9 @@ describe BrZipCode do
     expect(BrZipCode.services).to eq([
       BrZipCode::Service::Postmon,
       BrZipCode::Service::Viacep,
-      BrZipCode::Service::CorreioControl,
       BrZipCode::Service::RepublicaVirtual,
-      BrZipCode::Service::CepLivre
+      BrZipCode::Service::CepLivre,
+      BrZipCode::Service::CorreioControl
     ])
   end
 

@@ -38,7 +38,7 @@ module BrZipCode
       end
 
       def to_hash
-        return nil unless self.valid? and not self.response_body.nil?
+        return nil unless self.valid?
 
         cep_body = response_body['ceplivre']['cep']
 

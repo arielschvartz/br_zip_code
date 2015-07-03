@@ -2,7 +2,7 @@ module BrZipCode
   class Service
     class Postmon < BrZipCode::Service
       def to_hash
-        return nil unless self.valid? and not self.response_body.nil?
+        return nil unless self.valid?
 
         {
           street: self.response_body['logradouro'],
